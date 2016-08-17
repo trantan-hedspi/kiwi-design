@@ -1,0 +1,371 @@
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<title>KIWI Home Page</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/font-awesome.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		</head>
+		<body>
+
+			<nav class="navbar navbar-default navbar-fixed-top" id="top-fixed-menu"> 
+				<div class="row">
+					<div class="col-md-8 col-xs-8">
+						<div class="navbar-header col-md-2 col-xs-2">
+							<dl>
+								<dd><img src="assets/images/logo.png" height="42" width="42"></dd>
+								<dd><a class="kiwi-name" href="#">KIWI</a></dd>
+							</dl>
+						</div>
+						<div class="col-md-10 col-xs-10">
+							<div class="col-md-10 col-xs-12">
+								<dl class="search-top">
+									<dd class="search-top-input"> 
+										<input type="text" placeholder="Tìm Kiếm" />
+										<span class="glyphicon glyphicon-search"></span>
+									</dd>
+									<dd class="suggest-search">
+										<small>Từ khóa phổ biến:</small>
+										<a>Hair Salon</a> &nbsp;<a>Nail Salon</a>&nbsp;<a>Hair Salon</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<div class="account-menu">
+							<a class="signup"><span id="signup-icon">Đăng ký </span></a>&nbsp;&nbsp;
+							<a class="login"><span id="login-icon">Đăng nhập</span> </a>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+			<div class="category-menu">
+				<div class="clearfix">
+					<div class="col-md-1">
+						<span>Làm tóc</span>
+					</div>
+					<div class="col-md-1">
+						<span>Làm tóc</span>		
+					</div>
+					<div class="col-md-1">
+						<span>Làm tóc</span>
+					</div>
+					<div class="col-md-9">
+						<span>Làm tóc</span>			
+					</div>			
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="container">
+					<div class="search-location row">
+						<div class="search-location-map col-md-8">
+							<div class="search-location-label">
+								<span id="location-font">Tìm kiếm nhanh theo địa điểm</span>
+							</div>
+							<div class="search-map-content clearfix">
+								<div class=" col-md-4 col-sm-3 col-xs-2">
+									<div class="search-area-form"  id="north-area">
+										<div class="search-area-label">
+											<span>Miền Bắc</span>
+										</div>
+										<div class="select-area">
+											<button  type="button" class="btn btn-default area" style="float: left;">Hà Nội</button>
+											<button  type="button" class="btn btn-default area" style="float: right;">Hà Nội</button>
+										</div>
+									</div>
+									<div class="search-area-form"  id="south-area">
+										<div class="search-area-label">
+											<span>Miền Bắc</span>
+										</div>
+										<div class="select-area">
+											<button  type="button" class="btn btn-default area" style="float: left;">Hà Nội</button>
+											<button  type="button" class="btn btn-default area" style="float: right;">Hà Nội</button>
+										</div>
+									</div>
+								</div>
+								<div class="map col-md-4 col-sm-6 col-xs-8">
+									<img src="assets/images/map.png">
+								</div>
+								<div class="search-area-form col-md-4 col-sm-3 col-xs-2" id="middle-area">
+									<div class=" col-md-4 col-sm-3 col-xs-2">
+										<div class="search-area-form"  id="north-area">
+											<div class="search-area-label">
+												<span>Miền Trung</span>
+											</div>
+											<div class="select-area">
+												<button  type="button" class="btn btn-default area" style="float: left;">Hà Nội</button>
+												<button  type="button" class="btn btn-default area" style="float: right;">Hà Nội</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-location-form col-md-4">
+							<div class="search-location-label">
+								<span id="location-font">Tìm kiếm</span>
+							</div>
+							<div class="search-form-content">
+								<select id="select-region">
+									<option value="0">Chọn Miền</option>
+									<option value="1">Miền Bắc</option>
+									<option value="2">Miền Trung</option>
+									<option value="3">Miền Nam</option>
+								</select>
+								<select id="select-pref">
+									<option value="0">Chọn Thành Phố</option>
+									<option value="1">HN</option>
+									<option value="2">DN</option>
+									<option value="3">HCM</option>
+								</select>
+								<select id="select-city">
+									<option value="0">Chọn Quận Huyện</option>
+									<option value="1">Miền Bắc</option>
+									<option value="2">Miền Trung</option>
+									<option value="3">Miền Nam</option>
+								</select>
+								<button type="button" class="btn btn-primary">Tìm kiếm</button>
+							</div>
+						</div>
+					</div>
+					<div class="hotSalon">
+						<div class="hotSalonHeader">
+							<span id="salon-font">Hot Salon</span>
+							<div class="seeMore">
+								<a href="#">Xem thêm</a><span id="see-more-font"></span>
+							</div>
+						</div>
+						<div class="hotSalonContent row">
+							<div class="col-md-2">
+								<dl class="salonItem">
+									<dd>
+										<div class="salonImg">
+											<img src="assets/images/sample.png" height="220" width="220">
+										</div>
+									</dd>
+									<dd>
+										<div class="follow-info">
+											<span class="follow-font"></span>
+											<span class="follow-count">10000</span>
+										</div>						
+										<div class="rating-info">
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonInfo">
+											<span class="salonName">Hair salon karon</span> <br/>
+											<span class="salon-address-font"></span>
+											<span class="salonAddress">So 1 Dai Co Viet</span>
+											<span class="salon-phone-font"></span>
+											<span class="salonPhone">07040890818</span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonAction">
+											<div class="followBtn">
+												<a href="#">
+													<span class="follow-btn-font">Theo dõi</span>
+												</a>
+											</div> <!-- followBtn-->
+											<div class="pinBtn">
+												<a href="#">
+													<span class="pin-btn-font">Ghim</span>
+												</a>
+											</div> <!-- pinBtn-->
+										</div><!-- salonAction-->
+									</dd>
+								</dl>
+							</div>
+							<div class="col-md-2 col-half-offset">
+								<dl class="salonItem">
+									<dd>
+										<div class="salonImg">
+											<img src="assets/images/sample.png" height="220" width="220">
+										</div>
+									</dd>
+									<dd>
+										<div class="follow-info">
+											<span class="follow-font"></span>
+											<span class="follow-count">10000</span>
+										</div>						
+										<div class="rating-info">
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonInfo">
+											<span class="salonName">Hair salon karon</span> <br/>
+											<span class="salon-address-font"></span>
+											<span class="salonAddress">So 1 Dai Co Viet</span>
+											<span class="salon-phone-font"></span>
+											<span class="salonPhone">07040890818</span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonAction">
+											<div class="followBtn">
+												<a href="#">
+													<span class="follow-btn-font">Theo dõi</span>
+												</a>
+											</div> <!-- followBtn-->
+											<div class="pinBtn">
+												<a href="#">
+													<span class="pin-btn-font">Ghim</span>
+												</a>
+											</div> <!-- pinBtn-->
+										</div><!-- salonAction-->
+									</dd>
+								</dl>
+							</div>
+							<div class="col-md-2 col-half-offset">
+								<dl class="salonItem">
+									<dd>
+										<div class="salonImg">
+											<img src="assets/images/sample.png" height="220" width="220">
+										</div>
+									</dd>
+									<dd>
+										<div class="follow-info">
+											<span class="follow-font"></span>
+											<span class="follow-count">10000</span>
+										</div>						
+										<div class="rating-info">
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonInfo">
+											<span class="salonName">Hair salon karon</span> <br/>
+											<span class="salon-address-font"></span>
+											<span class="salonAddress">So 1 Dai Co Viet</span>
+											<span class="salon-phone-font"></span>
+											<span class="salonPhone">07040890818</span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonAction">
+											<div class="followBtn">
+												<a href="#">
+													<span class="follow-btn-font">Theo dõi</span>
+												</a>
+											</div> <!-- followBtn-->
+											<div class="pinBtn">
+												<a href="#">
+													<span class="pin-btn-font">Ghim</span>
+												</a>
+											</div> <!-- pinBtn-->
+										</div><!-- salonAction-->
+									</dd>
+								</dl>
+							</div>
+							<div class="col-md-2 col-half-offset">
+								<dl class="salonItem">
+									<dd>
+										<div class="salonImg">
+											<img src="assets/images/sample.png" height="220" width="220">
+										</div>
+									</dd>
+									<dd>
+										<div class="follow-info">
+											<span class="follow-font"></span>
+											<span class="follow-count">10000</span>
+										</div>						
+										<div class="rating-info">
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonInfo">
+											<span class="salonName">Hair salon karon</span> <br/>
+											<span class="salon-address-font"></span>
+											<span class="salonAddress">So 1 Dai Co Viet</span>
+											<span class="salon-phone-font"></span>
+											<span class="salonPhone">07040890818</span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonAction">
+											<div class="followBtn">
+												<a href="#">
+													<span class="follow-btn-font">Theo dõi</span>
+												</a>
+											</div> <!-- followBtn-->
+											<div class="pinBtn">
+												<a href="#">
+													<span class="pin-btn-font">Ghim</span>
+												</a>
+											</div> <!-- pinBtn-->
+										</div><!-- salonAction-->
+									</dd>
+								</dl>
+							</div>
+							<div class="col-md-2 col-half-offset">
+								<dl class="salonItem">
+									<dd>
+										<div class="salonImg">
+											<img src="assets/images/sample.png" height="220" width="220">
+										</div>
+									</dd>
+									<dd>
+										<div class="follow-info">
+											<span class="follow-font"></span>
+											<span class="follow-count">10000</span>
+										</div>						
+										<div class="rating-info">
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+											<span class="rating-star-font"></span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonInfo">
+											<span class="salonName">Hair salon karon</span> <br/>
+											<span class="salon-address-font"></span>
+											<span class="salonAddress">So 1 Dai Co Viet</span>
+											<span class="salon-phone-font"></span>
+											<span class="salonPhone">07040890818</span>
+										</div>
+									</dd>
+									<dd>
+										<div class="salonAction">
+											<div class="followBtn">
+												<a href="#">
+													<span class="follow-btn-font">Theo dõi</span>
+												</a>
+											</div> <!-- followBtn-->
+											<div class="pinBtn">
+												<a href="#">
+													<span class="pin-btn-font">Ghim</span>
+												</a>
+											</div> <!-- pinBtn-->
+										</div><!-- salonAction-->
+									</dd>
+								</dl>
+							</div>
+						</div> <!-- hotSalonContent-->
+					</div>
+				</div>
+			</div>
+		</body>
+		</html>
